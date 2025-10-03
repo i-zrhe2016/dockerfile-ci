@@ -27,7 +27,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: 0x1846
-          password: dckr_pat_f2m_rRofGVA31EQBDBp84F1ZVLY
+          password: dckr_pat_FvZMUrS2ZN8mYxAFtRD92gVIRYo
 
       # 构建并推送镜像
       - name: Build and Push
