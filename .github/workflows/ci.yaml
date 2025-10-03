@@ -37,6 +37,6 @@ jobs:
           file: ${{ env.DOCKERFILE_PATH }}
           push: true
           tags: |
-            ${{ env.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-            ${{ env.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-            ${{ github.ref_type == 'tag' && format('{0}/{1}:{2}', env.DOCKER_USERNAME, env.IMAGE_NAME, github.ref_name) || '' }}
+            0x1846/${{ env.IMAGE_NAME }}:latest
+            0x1846/${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ github.ref_type == 'tag' && format('0x1846/{0}:{1}', env.IMAGE_NAME, github.ref_name) || '' }}
